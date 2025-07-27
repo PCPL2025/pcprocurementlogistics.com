@@ -19,10 +19,10 @@ body {
 .hero {
   padding: 80px 20px;
 }
-.main-logo {
-  width: 1080px;
-  max-width: 100%;
-  margin-bottom: 50px;
+.logo {
+  max-width: 1080px !important;
+  width: 100% !important;
+  margin-top: 50px !important;
 }
 h1 {
   color: #222;
