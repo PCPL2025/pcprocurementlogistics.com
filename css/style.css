@@ -1,43 +1,55 @@
-
 html, body {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
   font-family: Arial, sans-serif;
-  overflow-x: hidden;
+  overflow-x: hidden;  /* Prevent horizontal scroll */
+  overflow-y: auto;    /* Allow vertical scroll if needed */
 }
 
 body {
-  background: url('../new_homepage_background.jpg') no-repeat center center fixed;
-  background-size: cover; /* Or use contain if you prefer */
+  background: url('../new_homepage_background.jpg') no-repeat center center;
+  background-size: contain;         /* Ensures full image fits in view */
   background-repeat: no-repeat;
-  background-position: center;
+  background-attachment: fixed;
+  background-color: #000;           /* Match image edge color to hide white bars */
 }
 
+/* Top Navigation Bar */
 .topnav {
   background-color: #ffffff;
   padding: 14px 0;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: center;
   gap: 30px;
 }
 
+.topnav a {
+  color: #c62828;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+/* Hero Section (Logo) */
 .hero {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  height: 90vh;
+  min-height: 90vh;
   padding-top: 5vh;
+  box-sizing: border-box;
 }
 
 .main-logo {
   width: 500px;
-  max-width: 80%;
+  max-width: 90%;
   height: auto;
 }
 
+/* Optional Typography for Other Pages */
 h1 {
   color: #222;
   font-size: 2em;
@@ -47,3 +59,4 @@ p {
   color: #555;
   font-size: 1.2em;
 }
+
