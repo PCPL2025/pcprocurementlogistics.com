@@ -1,29 +1,27 @@
 html, body {
   margin: 0;
   padding: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   font-family: Arial, sans-serif;
-  overflow-x: hidden;  /* Prevent horizontal scroll */
-  overflow-y: auto;    /* Allow vertical scroll if needed */
+  overflow: hidden; /* no scrolling */
 }
 
 body {
   background: url('../new_homepage_background.jpg') no-repeat center center;
-  background-size: contain;         /* Ensures full image fits in view */
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-color: #000;           /* Match image edge color to hide white bars */
+  background-size: cover;
+  background-color: #000; /* fallback color if image doesn't load */
 }
 
-/* Top Navigation Bar */
+/* Navigation */
 .topnav {
-  background-color: #ffffff;
-  padding: 14px 0;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: center;
+  background-color: #fff;
+  padding: 14px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   gap: 30px;
+  flex-wrap: wrap;
 }
 
 .topnav a {
@@ -33,14 +31,13 @@ body {
   font-size: 1.1em;
 }
 
-/* Hero Section (Logo) */
+/* Hero Section (logo) */
 .hero {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  min-height: 90vh;
+  height: calc(100vh - 56px); /* subtract navbar height */
   padding-top: 5vh;
-  box-sizing: border-box;
 }
 
 .main-logo {
@@ -49,14 +46,4 @@ body {
   height: auto;
 }
 
-/* Optional Typography for Other Pages */
-h1 {
-  color: #222;
-  font-size: 2em;
-}
-
-p {
-  color: #555;
-  font-size: 1.2em;
-}
 
