@@ -17,12 +17,17 @@ body {
   margin: 0 15px;
 }
 .hero {
-  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* fills screen height */
+  padding-top: 60px;
+  box-sizing: border-box;
 }
 .main-logo {
-  width: 300px;
-  max-width: 90%;
-  margin-bottom: 30px;
+  width: 500px;
+  max-width: 80%;
+  height: auto;
 }
 h1 {
   color: #222;
