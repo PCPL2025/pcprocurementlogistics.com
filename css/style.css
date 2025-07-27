@@ -18,19 +18,18 @@ body {
   padding: 14px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
-.topnav a {
-  color: #c62828;
-  text-decoration: none;
-  font-weight: bold;
-  margin: 0 15px;
+.topnav {
+  background-color: #ffffff;
+  padding: 14px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
 }
 .hero {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
-  box-sizing: border-box;
-  transform: translateY(-10vh);
+  align-items: flex-start;
+  height: 90vh;
+  padding-top: 5vh;
 }
 
 .main-logo {
