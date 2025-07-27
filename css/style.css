@@ -1,0 +1,29 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+  background: url('../assets/background.jpg') no-repeat center center;
+  background-size: cover;
+  background-color: #000;
+}
+
+.topnav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #fff;
+  padding: 14px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  gap: 30px;
+}
+
+.topnav a {
+  color: #c62828;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+}
