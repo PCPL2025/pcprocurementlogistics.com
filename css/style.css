@@ -1,16 +1,16 @@
 html, body {
   margin: 0;
   padding: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   font-family: Arial, sans-serif;
-  overflow: hidden; /* no scrolling */
+  overflow-x: hidden; /* allow vertical scrolling if needed */
 }
 
 body {
   background: url('../new_homepage_background.jpg') no-repeat center center;
   background-size: cover;
-  background-color: #000; /* fallback color if image doesn't load */
+  background-color: #000; /* fallback if image fails */
 }
 
 /* Navigation */
@@ -34,15 +34,17 @@ body {
 /* Hero Section (logo) */
 .hero {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
-  height: calc(100vh - 56px); /* subtract navbar height */
-  padding-top: 5vh;
+  height: calc(100vh - 56px); /* subtract nav height */
+  padding: 40px;
+  box-sizing: border-box;
 }
 
 .main-logo {
-  width: 500px;
+  width: 400px;
   max-width: 90%;
   height: auto;
 }
+
 
