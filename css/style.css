@@ -41,13 +41,12 @@ body {
   align-items: flex-start;
   padding: 40px;
   box-sizing: border-box;
-  height: auto;
 }
 
 .main-logo {
-  width: 400px;
-  max-width: 90%;
+  width: 400px;         /* or adjust size as needed */
   height: auto;
+  margin: 0;            /* remove bottom margin */
 }
 
 
