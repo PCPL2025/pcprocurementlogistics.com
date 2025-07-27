@@ -1,0 +1,41 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('new_homepage_background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  text-align: center;
+  background: rgba(0,0,0,0.6);
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.main-logo {
+  width: 540px;
+}
