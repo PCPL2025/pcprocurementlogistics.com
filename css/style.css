@@ -1,9 +1,9 @@
 
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: url('../assets/us-map.png') center center / cover no-repeat fixed;
-  text-align: center;
+  font-family: Arial, sans-serif;
+  background: url('../new_homepage_background.jpg') no-repeat center center fixed;
+  background-size: cover;
 }
 .topnav {
   background-color: #ffffff;
