@@ -1,47 +1,14 @@
-html, body {
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-  height: 100vh;
-  font-family: Arial, sans-serif;
-  overflow: hidden; /* no scrolling */
-}
-
-body {
-  background: url('../new_homepage_background.jpg') no-repeat center center;
-  background-size: cover;
-  background-color: #000; /* fallback color if image doesn't load */
-}
-
-/* Navigation */
-.topnav {
-  display: flex;
-  justify-content: center;
-  background-color: #fff;
-  padding: 14px 0;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  gap: 30px;
-  flex-wrap: wrap;
-}
-
-.topnav a {
-  color: #c62828;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.1em;
-}
-
-/* Hero Section (logo) */
 .hero {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
-  height: calc(100vh - 56px); /* subtract navbar height */
-  padding-top: 5vh;
+  height: calc(100vh - 56px); /* adjust for nav height */
+  padding: 40px 0 0 40px;     /* top and left padding for spacing */
+  box-sizing: border-box;
 }
 
 .main-logo {
-  width: 500px;
+  width: 400px;
   max-width: 90%;
   height: auto;
 }
