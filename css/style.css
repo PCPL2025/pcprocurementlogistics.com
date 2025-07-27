@@ -2,8 +2,9 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: url('../new_homepage_background.jpg') no-repeat center center fixed;
-  background-size: cover;
+  background: url('../new_homepage_background.jpg') no-repeat center top scroll;
+  background-size: contain; /* ensures full image fits */
+  background-repeat: no-repeat;
 }
 .topnav {
   background-color: #ffffff;
