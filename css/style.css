@@ -2,15 +2,16 @@ html, body {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   font-family: Arial, sans-serif;
-  overflow-x: hidden; /* allow vertical scrolling if needed */
+  overflow-x: hidden; /* allow vertical scroll if needed */
 }
 
 body {
-  background: url('../new_homepage_background.jpg') no-repeat center center;
-  background-size: cover;
-  background-color: #000; /* fallback if image fails */
+  background: url('../new_homepage_background.jpg') no-repeat center top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #000; /* fallback color */
 }
 
 /* Navigation */
@@ -22,6 +23,8 @@ body {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   gap: 30px;
   flex-wrap: wrap;
+  position: relative;
+  z-index: 10;
 }
 
 .topnav a {
@@ -36,9 +39,9 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  height: calc(100vh - 56px); /* subtract nav height */
   padding: 40px;
   box-sizing: border-box;
+  height: auto;
 }
 
 .main-logo {
@@ -46,5 +49,6 @@ body {
   max-width: 90%;
   height: auto;
 }
+
 
 
