@@ -43,10 +43,11 @@ body {
   flex-grow: 1;
   height: 100vh;
   background: url("assets/landing.png") center center no-repeat;
-  background-size: contain;
+  background-size: 100% auto; /* Stretch horizontally */
   background-repeat: no-repeat;
-  background-color: #000; /* Optional: fills gaps if the image doesn't stretch */
+  background-color: #000; /* Optional: fills any gaps with black */
 }
+
 
 
 
