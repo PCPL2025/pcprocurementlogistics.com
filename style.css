@@ -1,73 +1,46 @@
-
-/* Reset default styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-/* Body styling with centered background */
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-image: url("background.jpg"); /* Replace with your actual image file */
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 100vh;
-  color: #ffffff;
-  display: flex;
+body, html {
+  height: 100%;
+  font-family: Arial, sans-serif;
 }
-
-/* Left-side vertical navigation */
-nav {
-  width: 220px;
-  background-color: rgba(0, 0, 0, 0.8);
-  height: 100vh;
-  padding-top: 40px;
+.container {
   display: flex;
-  flex-direction: column;
-  position: fixed;
-  left: 0;
-  top: 0;
+  height: 100vh;
 }
-
-nav a {
-  color: #ffffff;
+.sidebar {
+  background-color: white;
+  width: 250px;
+  padding: 20px;
+  border-right: 1px solid #ccc;
+}
+.sidebar h2 {
+  margin-bottom: 20px;
+  color: #c00;
+}
+.sidebar ul {
+  list-style-type: none;
+}
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+.sidebar ul li a {
   text-decoration: none;
-  padding: 15px 25px;
-  font-size: 16px;
-  transition: background 0.3s;
+  color: black;
+  font-weight: bold;
 }
-
-nav a:hover {
-  background-color: rgba(255, 0, 0, 0.5);
-}
-
-/* Main content centered */
-main {
-  margin-left: 220px;
+.landing {
   flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  position: relative;
+}
+.bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.content {
   padding: 40px;
 }
-
-/* Logo */
-.logo img {
-  max-width: 500px; /* Adjust size as needed */
-  height: auto;
-  margin-bottom: 30px;
-}
-
-/* Tagline or intro */
-.tagline {
-  font-size: 24px;
-  font-weight: bold;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
-}
-
-
