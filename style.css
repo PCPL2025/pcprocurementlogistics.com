@@ -40,12 +40,11 @@ body {
 
 .main {
   margin-left: 280px;
-  flex-grow: 1;
   height: 100vh;
-  background: url("assets/landing.png") center center no-repeat;
+  background: url("assets/landing.png") right center no-repeat;
   background-size: 100% auto; /* Stretch horizontally */
   background-repeat: no-repeat;
-  background-color: #000; /* Optional: fills any gaps with black */
+  background-color: #000;
 }
 
 
