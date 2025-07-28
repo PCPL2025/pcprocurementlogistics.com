@@ -3,6 +3,8 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   display: flex;
+  background: url('assets/landing.png') no-repeat center center fixed;
+  background-size: cover;
 }
 
 .sidebar {
@@ -41,12 +43,6 @@ body {
   margin-left: 220px;
   padding: 2rem;
   flex-grow: 1;
-}
-.hero {
-  background: url('assets/landing.png') no-repeat center center;
-  background-size: cover;
-  padding: 4rem;
-  color: white;
-  text-shadow: 1px 1px 3px black;
+  background-color: rgba(255, 255, 255, 0.9);
   border-radius: 10px;
 }
