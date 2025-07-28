@@ -42,10 +42,11 @@ body {
   margin-left: 280px;
   flex-grow: 1;
   height: 100vh;
-  background: url("assets/landing.png") no-repeat center center;
+  background: url("assets/landing.png") center center no-repeat;
   background-size: contain;
   background-repeat: no-repeat;
-  background-color: #000; /* Optional: fallback color */
+  background-color: #000; /* Optional: fills gaps if the image doesn't stretch */
 }
+
 
 
