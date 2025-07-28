@@ -43,6 +43,9 @@ body {
   flex-grow: 1;
   height: 100vh;
   background: url("assets/landing.png") no-repeat center center;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #000; /* Optional: fallback color */
 }
+
 
