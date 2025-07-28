@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -25,10 +26,11 @@ body {
 .sidebar nav a {
   color: white;
   text-decoration: none;
-  margin: 1rem 0;
+  margin: 1.25rem 0;
   display: block;
   text-align: center;
   font-weight: bold;
+  font-size: 1.5rem;
 }
 
 .sidebar nav a:hover {
@@ -54,3 +56,7 @@ body {
   object-fit: fill;
 }
 
+.page {
+  margin-left: 280px;
+  padding: 2rem;
+}
