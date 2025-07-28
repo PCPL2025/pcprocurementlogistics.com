@@ -63,3 +63,9 @@ form button {
 form button:hover {
     background-color: #d32f2f;
 }
+
+.sidebar nav a.active {
+    background-color: #e0e0e0;
+    color: #000;
+    transform: scale(1.15);
+}
