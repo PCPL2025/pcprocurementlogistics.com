@@ -39,10 +39,10 @@ body {
 }
 
 .main {
-  margin-left: 220px;
+  margin-left: 280px;
   flex-grow: 1;
-  background: url('assets/landing.png') no-repeat center center;
-  background-size: contain;
-  background-color: #ffffff;
   height: 100vh;
+  background: url("assets/landing.png") no-repeat center center;
+  background-size: cover;
 }
+
